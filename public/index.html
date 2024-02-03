@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="logo192.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="A To-Do App which is accpomplished using React js and Firebase"
+    />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>To-Do App</title>
+    <style>
+      :root {
+        --dark: #498fea;
+        --grey: #080a0c;
+        --pink: #fefdfd;
+    }
+    
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Fira sans", sans-serif;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+        color: #151313;
+        background-color: var(--dark);
+    }
+    
+    header {
+        padding: 2rem 1rem;
+        max-width: 800px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    header h1{ 
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: var(--grey);
+        margin-bottom: 1rem;
+    }
+    
+    header .subtitle {
+        font-size: 1rem;
+        color: var(--pink);
+    }
+    </style>
+  </head>
+  <body>
+      <header>
+          <h1>TaskDash</h1>
+          <h3>Your Ultimate ToDo Dashboard</h3>
+          <p class="subtitle">Unleash your inner productivity wizard with our Quirky ToDo App - where everyday tasks become extraordinary adventures! 🚀✨</p>
+    </div>
+    <ul>
+    <li>Add Your Task</li>
+    <li>Mark it as Completed</li>
+    <li>Update Your Task</li>
+    <li>Delete Your Task</li>
+  </ul>
+  </header>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
