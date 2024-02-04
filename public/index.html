@@ -27,7 +27,7 @@
     
     body {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         min-height: 100vh;
         color: #151313;
         background-color: var(--dark);
@@ -44,12 +44,34 @@
         font-size: 2.5rem;
         font-weight: 300;
         color: var(--grey);
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        align-content: center;
+        text-align: center;
+    }
+    header h3{
+      font-size: medium;
+      font-weight: 200;
+      text-align: center;
     }
     
     header .subtitle {
         font-size: 1rem;
         color: var(--pink);
+        align-content: center;
+        text-align: center;
+    }
+
+    header ul{
+        text-align: center;
+    }
+
+    .cont {
+      display: flex;
+      flex-flow: row wrap; 
+    }
+    .cont li {
+      flex-basis: 50%; 
+      font-style: italic;
     }
     </style>
   </head>
@@ -59,7 +81,7 @@
           <h3>Your Ultimate ToDo Dashboard</h3>
           <p class="subtitle">Unleash your inner productivity wizard with our Quirky ToDo App - where everyday tasks become extraordinary adventures! 🚀✨</p>
     </div>
-    <ul>
+    <ul class="cont">
     <li>Add Your Task</li>
     <li>Mark it as Completed</li>
     <li>Update Your Task</li>
